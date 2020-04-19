@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>
+            Pseudoclases
+        </h1>
+        <p>
+            Estilo especiales dependiendo del contexto, posicion o estado
+        </p> 
+    </header>
+
+    <main class="main">
+        <article>
+            <h2>
+                <code>:root</code>
+            </h2>
+            <p>
+                La Pseudo-clases de CSS :root seleecciona el elemento de raiz de un documento.
+                Aplicando a HTML, :root representa el elemento &lt;html&gt;
+                y es identico al selector html, excepto que en su nivel de especificidad 
+                es mayor. Sirve para declarar variables CSS.
+            </p>
+        </article>
+        <article>
+            <h2>
+                <code>:hover</code>
+            </h2>
+            <p>
+                La Pseudo-clases de CSS :hover se representa cuando el usuario coloca
+                el puntero sobre el elemento, pero necesariamente estaactivo.
+                En pantallas touch :hover es problemático. 
+            </p>
+        </article>
+        <article>
+            <h2>
+                <code>:active</code>
+            </h2>
+            <p>
+                La Pseudo-clases :active de CSS cubre el caso en que un elemento esta siendo
+                activado por el usuario. cuando se interactua con el raton, se corresponde al momento en que el 
+                usuario presiona el boton del raton hasta el momento en el que lo suelta. A menudo es usado en 
+                los elemento &lt;a&gt; y &lt;button&gt; de HTML.
+            </p>
+            <p>
+                El orden si importa:
+            </p>
+            <p>
+                <ol>
+                   <code><li>:link {...}</li></code> 
+                   <code><li>:visited {...}</li></code> 
+                   <code><li>:hover {...}</li></code> 
+                   <code><li>:active {...}</li></code> 
+                </ol>
+            </p>
+        </article>
+        <article>
+            <h2>
+                <code>:target</code>
+            </h2>
+            <p>
+                La Pseudo-clases de CSS :target representa el elemento único, si existe alguno, con un id concidente
+                con el identificador de fragmentos de la URL del documento. 
+            </p>
+            <p>
+                <a href="#modal">Modal con CSS</a>
+            </p>
+        </article>
+        <article>
+            <h2>
+                <code>:nth-child :first-child :last-child</code>
+            </h2>
+            <ul>
+                <li>
+                    <code>nth-child</code>: selecciona el elemento indicado que sea enésimo
+                    hijo de su elemento padre.
+                </li>
+                <li>
+                    <code>first-child</code>: selecciona el elemento indicado que sea el primer
+                    hijo de su elemento padre.
+                </li>
+                <li>
+                    <code>last-child</code>: selecciona el elemento indicado que sea el último
+                    hijo de su elemento padre.
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2>
+                <code>:nth-of-type :first-of-type :last-of-type</code>
+            </h2>
+            <ul>
+                <li>
+                    <code>nth-of-type</code>: selecciona el elemento indicado que sea enésimo
+                    hijo en su tipo sin importar la jerarquia dentro del elemento padre.
+                </li>
+                <li>
+                    <code>first-of-type</code>: selecciona el elemento indicado que sea primer
+                    hijo en su tipo sin importar la jerarquia dentro del elemento padre.
+                </li>
+                <li>
+                    <code>last-of-type</code>: selecciona el elemento indicado que sea último
+                    hijo en su tipo sin importar la jerarquia dentro del elemento padre.
+                </li>
+            </ul>
+           <p>
+               <a href="#">Ejemplo interactivo</a>
+           </p>
+        </article>
+        <article>
+            <h2>
+                <code>:not</code>
+            </h2>
+            <p>
+                La Pseudo-clases de CSS de negación:not(x), es una notación funcional que toma un
+                selector simple X como argumento. Voincide con un elemento que no esta representado.
+                X no debe contener otro selector de negación. 
+            </p>
+        </article>
+        <article>
+            <h2>
+                <code>:empty</code>
+            </h2>
+            <p>
+                La Pseudo-clases de CSS :empty corresponde a un elemento sin ningun nodo hijo. solo
+                cuando hay nodos de elemento o texto con uno o mas caracteres dentro del elemento ese se convierte
+                en no vacio. 
+            </p>
+        </article>
+            
+    </main>
+    <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+    <div id="modal" class="modal">
+        <aside class="modal-box">
+            <h2>Soy un bonito modal css</h2>
+            <form action="">
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <input type="submit" value="Enviar">
+            </form>
+            <a href="#">Cerrar</a>
+        </aside>
+    </div>
+</body>
+</html>
